@@ -1,0 +1,12 @@
+
+@mixin gradientBackground{
+    background: linear-gradient(135deg, $primary-color,$primary-color-variant);
+    color: $white-color;
+  }
+
+  @mixin button{
+    background-color: $secondary-color;
+    color: $white-color;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }

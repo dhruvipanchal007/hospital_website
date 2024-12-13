@@ -1,0 +1,32 @@
+#testimonial{
+    &.swiper{
+        width: $container-lg;
+    }
+    .testimonials_info{
+        text-align: center;
+        margin-bottom: 50px
+    }
+    .testimonial_details{
+        margin-bottom: 50px;
+        .patient_info{
+            @include gradientBackground;
+            padding: 20px 30px;
+            border-radius: 10px;
+            p{
+                margin-bottom: 10px;
+            }
+            .avatar{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .patient_img img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+            }
+
+        }
+      
+    }
+}

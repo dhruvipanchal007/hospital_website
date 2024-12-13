@@ -1,0 +1,43 @@
+
+footer{
+    background-color: rgb(5, 5, 36);
+    color: $white-color;
+    padding: 30px 20px;
+
+    .footer_details{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 50px;
+        .footer_info{
+            h5{
+                margin-bottom: 5px;
+            }
+            p{
+                margin-bottom: 5px;
+            }
+            .personal-detail{
+                display: flex;
+                gap: 5px;
+                margin-top: 5px;
+            }
+            .icons{
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+}
+@media (max-width:1024px){
+    footer{
+        .footer_details{
+            gap: 30px;
+        }
+    }
+}
+@media(max-width:600px){
+    footer{
+        .footer_details{
+            grid-template-columns: 1fr;
+        }
+    }
+}

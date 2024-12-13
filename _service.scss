@@ -1,0 +1,58 @@
+#services{
+    .service_info{
+        text-align: center;
+
+    h1{
+        margin: 0;
+    }
+        
+        p{
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+    .service_details{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-top: 30px;
+
+        .service_card{
+            @include gradientBackground;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            gap: 10px;
+            transition: all 400ms ease;
+
+            &:hover{
+                margin-top: -15px;
+            }
+            i{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media(max-width:1024px){
+    #services{
+        .service_details{
+            gap: 12px;
+            grid-template-columns: 1fr 1fr;
+            .service_card{
+                gap: 5px;
+                padding: 10px;
+            }
+        }
+       
+    }
+}
+@media(max-width:600px){
+    #services{
+        .service_details{
+            grid-template-columns: 1fr;
+        }
+    }
+
+}
