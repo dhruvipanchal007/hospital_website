@@ -15,7 +15,6 @@ nav{
     ul{
         list-style: none;
         display: flex;
-        flex-direction: row;
         gap: 20px;
     }
     button{
@@ -36,39 +35,13 @@ nav{
 
 @media (max-width:1024px){
     nav{
-        button{
-            display: block;
-            border: none;
-            background: transparent;
-            color: $white-color;
-            font-size: 20px;
-            
-            &#close_btn{
-                display: none;
+        .nav-bar{
+            button{
+                display: inline-block;
+                background: red;
             }
         }
-        ul{
-            position: fixed;
-            top: 60px;
-            right: 20px;
-            margin: 0;
-            padding: 0;
-            flex-direction: column;
-            text-align: center;
-            gap: 0;
-            display: none;
-           
-        }
-        .btn{
-            border-radius: 0;
-        }
-        li{
-            width: 100%;
-            background: linear-gradient($primary-color-variant,
-            lighten($primary-color,10%));
-             padding: 20px 0;
-        }
+
         
     }
-
 }
