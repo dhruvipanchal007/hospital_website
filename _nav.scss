@@ -38,7 +38,18 @@ nav{
         .nav-bar{
             button{
                 display: inline-block;
-                background: red;
+                background: transparent;
+                color: $white-color;
+                font-size: 20px;
+                &#close_btn{
+                    display: none;
+                }
+            }
+            ul{
+                position: fixed;
+                top: 5rem;
+                right: 5%;
+                flex-direction: column;
             }
         }
 
